@@ -1,0 +1,22 @@
+{
+  "name": "blindvest",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon --exec ts-node src/index.ts",
+    "lint": "yarn prettier --write ."
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.10",
+    "@types/express": "^4.17.11",
+    "@types/node": "^15.6.1",
+    "prettier": "2.3.0",
+    "typescript": "^4.2.4"
+  }
+}
