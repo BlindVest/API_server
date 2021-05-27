@@ -1,12 +1,8 @@
-import { Router, Request, Response } from 'express'
+import { Router } from 'express'
+import { main } from './v1'
 
 const router = Router()
 
-router.get('/', (req: Request, res: Response) => {
-  res.send('asdf')
-  console.log('===========================')
-  console.log(`어떤 놈이 접속했음: IP: ${req.ip}`)
-  console.log('===========================')
-})
+router.get('/v1/', main)
 
 export default router
